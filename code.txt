@@ -1,0 +1,40 @@
+
+
+num = int(input())
+if num % 2 == 0:
+     print('even')
+else:
+     print('odd')
+
+
+============
+
+input_line = int(input())
+for i in range(input_line):
+  s = input().rstrip().split(' ')
+  print("hello = "+s[0]+" , world = "+s[1])
+ 
+==========
+
+
+a = int(input())
+b = int(input())
+number = a * b
+print (number)
+
+=============
+
+s = input().split() 
+print(s) #出力：['s_1', 's_2']
+print(s[0]) #出力：s_1
+print(s[1]) #出力：s_
+
+=============
+
+i = list(map(int, input().split()))
+number =( i[0] * i[1] )
+print(i[0]) #出力：s_1
+print(i[1]) #出力：s_
+print (number)
+
+=============
