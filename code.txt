@@ -1,4 +1,8 @@
+s = [input() for i in range(3)]
+for i in range(3):
+ print(s[i]) #
 
+===================
 
 num = int(input())
 if num % 2 == 0:
@@ -38,3 +42,29 @@ print(i[1]) #o—ÍFs_
 print (number)
 
 =============
+
+i = [int(input()) for i in range(5)]
+print(i) #[i_1, i_2, i_3
+print(min(i))
+
+============
+
+N = int(input()) #1s–Ú‚ÌN‚ğæ“¾‚·‚é
+s = [int(input()) for i in range(N)]
+list = sorted(s)
+for i in range(N):
+ print(list[i])
+ 
+============
+
+N = int(input())
+for i in range(N):
+ num = i + 1
+ if num % 3 == 0 and  num % 5 == 0:
+  print ("Fizz Buzz")
+ elif num % 3 == 0:
+  print ("Fizz")
+ elif num % 5 == 0:
+  print ("Buzz")
+ else: 
+  print (num)
