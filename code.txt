@@ -33,6 +33,26 @@ print(s) #出力：['s_1', 's_2']
 print(s[0]) #出力：s_1
 print(s[1]) #出力：s_
 
+===============
+
+s = input().split() 
+for i in range(3):
+ print(s[i]) 
+
+===========
+
+N = int(input())
+s = input().split() 
+for i in range(N):
+ print(s[i]) 
+
+=========
+N = int(input())
+s = input().split(',') 
+for i in range(N):
+ print(s[i]) 
+
+
 =============
 
 i = list(map(int, input().split()))
@@ -68,3 +88,63 @@ for i in range(N):
   print ("Buzz")
  else: 
   print (num)
+  
+  
+===============
+
+i = list(map(int, input().split()))
+num = (i[0] * 100000/ i[1])
+if num >= 10000:
+ print ("yes")
+else:
+ print ("no")
+
+===============
+
+import math
+N = int(input())
+num = (( N -2 ) * 180)/N
+print (math.floor(num))
+
+===============
+
+i = list(map(int, input().split()))
+if i[0] > i[1]:
+ num = i[0] - i[1]
+else:
+ num = i[1] - i[0]
+
+print (num)
+
+=====================
+
+N = str(input())
+print(N.replace(", maybe.", "!!" ))
+
+====================
+
+N = str(input())
+num = len(N)
+moji = ""
+
+for i in range(num):
+ moji = moji + "^"
+
+print (N)
+print (moji)
+
+====================
+
+i = list(map(int, input().split(" + ")))
+num = i[0] + i[1]
+print (num)
+
+====================
+
+N = int(input())
+N = N - 1
+s = ['6B', '5B', '4B', '3B', '2B', 'B', 'HB', 'F', 'H', '2H', '3H', '4H', '5H', '6H', '7H', '8H', '9H']
+print (s[N])
+
+====================
+
