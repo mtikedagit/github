@@ -148,3 +148,41 @@ print (s[N])
 
 ====================
 
+f = float(input())
+US = f - 18 
+UK = f - 18.5
+
+print ( US , UK )
+
+
+========================
+
+i = int(input())
+leg = i + 1 
+
+print ( leg )
+
+========================
+
+N = int(input())
+Black = "##########"
+White = ".........."
+
+for i in range(N):
+ print (Black)
+ print (White)
+
+========================
+
+N = str(input())
+num = len(N)
+s = list(N)
+for i in range(num):
+ print (s[i])
+
+
+========================
+
+s = input()
+s = "Mt. " + s
+print (s)
