@@ -305,3 +305,20 @@ for mykey, myvalue in count.items():
  print(mykey,myvalue)
  
 ============================
+
+list=[]
+N = int(input())
+for i in range(N):
+ flg = 0    
+ W = input()
+ c = len(list)
+ if c >= 1:
+  for j in range(c):
+    if list[j] == W:
+     flg = 1
+ if flg == 1:
+  list.remove(W) 
+ list.insert(0, W)
+c = len(list)
+for i in range(c):
+ print (list[i])
