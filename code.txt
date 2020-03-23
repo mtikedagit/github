@@ -186,3 +186,122 @@ for i in range(num):
 s = input()
 s = "Mt. " + s
 print (s)
+
+========================
+
+import math
+N = int(input())
+X = N / 140 * 100
+print (math.floor(X),end='%')
+
+========================
+
+N = int(input())
+for i in range(10):
+# print (N)
+ print(str(N)[-1]) 
+ N = N + 1 
+ 
+==========================
+
+i = list(map(int, input().split()))
+if i[0] < i[1]:
+ num = i[1] - i[0]
+ print ("+"+str(num)) 
+elif i[0] > i[1]:
+ num = i[0] - i[1]
+ print ("-"+str(num)) 
+elif i[0] == i[1]:
+ print ("0")
+
+============================
+
+s = str(input())
+
+ZERO = ['C', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+ONE = ['A', 'D', 'O', 'P', 'Q', 'R']
+TWO = ['B']
+J = 0
+
+if s == 'B':
+ J = 2
+else:
+ for i in range(6):
+  if s == ONE[i]:
+   J = 1
+
+print (J)
+
+============================
+
+l = int(input())
+
+if l < 30:
+ print ('quiet')
+elif  l >= 30 and l < 50:
+ print ('normal')
+elif  l >= 50 and l < 70:
+ print ('noisy')
+elif  l >= 70 :
+ print ('very noisy')
+
+
+============================
+
+s = str(input())
+
+if s == 'Friday':
+ print ('TGIF')
+else:
+ print ('Still',s)
+
+============================
+
+f = float(input())
+if 20 <= f and f <=15000:
+ print ('yes')
+elif 15000 < f and f <=20000:
+ print ('not sure')
+else:
+ print ('no')
+ 
+
+============================
+
+import math
+N = int(input())
+X = N / 10 
+print (math.floor(X))
+
+============================
+
+N = int(input())
+sum = N * 10 + 100
+print (sum)
+
+============================
+
+N = int(input())
+sum = N * 12 
+print (sum)
+
+============================
+
+N = int(input())
+s = str(input())
+list = list(s)
+word = ''
+for i in range(N):
+ word = word + list[i]
+print (word)
+
+============================
+
+from collections import Counter
+s = input().split()
+count = Counter(s)
+
+for mykey, myvalue in count.items():
+ print(mykey,myvalue)
+ 
+============================
