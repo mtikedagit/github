@@ -1,0 +1,95 @@
+
+N = int(input())
+flg = ''
+
+F = N % 4
+H = N % 100
+FH = N % 400
+
+if F == 0: 
+ if H != 0:
+  flg = 'Yes'
+ elif FH ==0:
+  flg = 'Yes' 
+ else:
+  flg = 'No'
+else:
+  flg = 'No'
+print (flg)
+
+======================
+
+
+import datetime
+date_str = input()
+date_formatted = datetime.datetime.strptime(date_str, "%Y %m %d")
+#print (date_formatted)
+flg = ''
+
+
+ME = datetime.datetime(1912,7,29,0,0,0)
+TB = datetime.datetime(1912,7,30,0,0,0)
+TE = datetime.datetime(1926,12,24,0,0,0)
+SB = datetime.datetime(1926,12,25,0,0,0)
+SE = datetime.datetime(1989,1,7,0,0,0)
+HB = datetime.datetime(1989,1,8,0,0,0)
+HE = datetime.datetime(2019,4,30,0,0,0)
+RB = datetime.datetime(2019,5,1,0,0,0)
+
+if  date_formatted <= ME:
+ print ('明治年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+elif  date_formatted >=TB and date_formatted <=TE:
+ print ('大正年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+elif  date_formatted >=SB and date_formatted <=SE:  
+ print ('昭和年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+elif  date_formatted >=HB and date_formatted <=HE:  
+ print ('平成年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+elif  date_formatted >=RB:   
+ print ('令和年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+
+======================
+
+import datetime
+date_str = input()
+date_formatted = datetime.datetime.strptime(date_str, "%Y %m %d")
+
+MB = datetime.datetime(1868,10,23,0,0,0)
+ME = datetime.datetime(1912,7,29,0,0,0)
+TB = datetime.datetime(1912,7,30,0,0,0)
+TE = datetime.datetime(1926,12,24,0,0,0)
+SB = datetime.datetime(1926,12,25,0,0,0)
+SE = datetime.datetime(1989,1,7,0,0,0)
+HB = datetime.datetime(1989,1,8,0,0,0)
+HE = datetime.datetime(2019,4,30,0,0,0)
+RB = datetime.datetime(2019,5,1,0,0,0)
+
+if  date_formatted <= ME:
+  sum = int(date_formatted.year) - 1867
+  if sum == 1:
+    print ('明治元年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+  else:
+    print ('明治' + str(sum) + '年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+elif  date_formatted >=TB and date_formatted <=TE:
+  sum = int(date_formatted.year) - 1911
+  if sum == 1:
+    print ('大正元年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+  else:
+    print ('大正' + str(sum) + '年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+elif  date_formatted >=SB and date_formatted <=SE:
+  sum = int(date_formatted.year) - 1925
+  if sum == 1:
+    print ('昭和元年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+  else:
+    print ('昭和' + str(sum) + '年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+elif  date_formatted >=HB and date_formatted <=HE:  
+  sum = int(date_formatted.year) - 1988
+  if sum == 1:
+    print ('平成元年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+  else:
+    print ('平成' + str(sum) + '年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+elif  date_formatted >=RB:
+  sum = int(date_formatted.year) - 2018
+  if sum == 1:
+    print ('令和元年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
+  else:
+    print ('令和' + str(sum) + '年' + str(date_formatted.month) + '月' + str(date_formatted.day) + '日')
