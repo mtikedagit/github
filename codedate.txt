@@ -93,3 +93,96 @@ elif  date_formatted >=RB:
     print ('—ß˜aŒ³”N' + str(date_formatted.month) + 'ŒŽ' + str(date_formatted.day) + '“ú')
   else:
     print ('—ß˜a' + str(sum) + '”N' + str(date_formatted.month) + 'ŒŽ' + str(date_formatted.day) + '“ú')
+
+======================
+
+i = list(map(int, input().split()))
+
+flg = ''
+
+F = i[0] % 4
+H = i[0] % 100
+FH = i[0] % 400
+
+if F == 0: 
+ if H != 0:
+  flg = 'Yes'
+ elif FH ==0:
+  flg = 'Yes' 
+ else:
+  flg = 'No'
+else:
+  flg = 'No'
+  
+if i[1] ==4 or i[1] ==6 or i[1] ==9 or i[1] ==11:
+ print ('30')
+elif i[1] ==2 and flg == 'Yes':
+ print ('29')
+elif i[1] ==2 and flg == 'No':
+ print ('28')
+else:
+ print ('31')
+
+
+======================
+
+from datetime import datetime, date, timedelta
+import datetime
+date_str = input()
+date_formatted = datetime.datetime.strptime(date_str, "%Y %m %d")
+
+tomorrow = date_formatted + timedelta(days=1)
+
+print (str(tomorrow.year) + ' ' + str(tomorrow.month) + ' ' + str(tomorrow.day))
+
+======================
+
+from datetime import datetime, date, timedelta
+import datetime
+
+s = input().split()
+date_str = ('2019' + " " + s[0] + " " + s[1])
+date_formatted = datetime.datetime.strptime(date_str, "%Y %m %d")
+#print (date_formatted)
+#flg = ''
+
+if s[2] == "SUN" or s[2] == "MON" or s[2] == "TUE" or s[2] == "WED" or s[2] == "THU":
+  flg = 1
+elif s[2] == "FRI":
+  flg = 3
+elif s[2] == "SAT":
+  flg = 2
+
+tomorrow = date_formatted + timedelta(days=flg)
+#print (tomorrow)
+print (str(tomorrow.month) + 'ŒŽ' + str(tomorrow.day) + '“ú')
+
+======================
+
+
+import datetime
+import locale
+
+dt = datetime.datetime(2018, 1, 1)
+print(dt)
+# 2018-01-01 00:00:00
+
+print(dt.strftime('%A, %a, %B, %b'))
+# Monday, Mon, January, Jan
+
+======================
+
+from datetime import datetime, date, timedelta
+import datetime
+import locale
+
+Begin = datetime.datetime(2019,1,1,0,0,0)
+End = datetime.datetime(2019,12,31,0,0,0)
+i = Begin
+
+while i <= End:
+  week = i.strftime('%a') 
+  print(week)
+  i = i + timedelta(days=1)
+
+======================
