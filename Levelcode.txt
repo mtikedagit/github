@@ -64,20 +64,135 @@ print(s.count(c))
 ===================
 
 
-from collections import Counter
+num = int(input())
 
-c = input()
-s = input()
+for i in range(num):
+    print(input().split()[1])
 
-count = 0
-lenc = len(c)
-lens = len(s)
-
-for i in range(lens):
-  target = s[i:i+lenc]
-  if c == target:
-    count = count + 1
-print(count)
 
 ===================
 
+num = int(input())
+list = list(map(int, input().split()))
+list.sort()
+
+for i in range(num):
+ print(list[i])
+
+===================
+
+my_dict = {}
+N = int(input())
+for i in range(N):
+  key, value = input().split()
+  value = int(value)
+  my_dict[key] = value
+
+print(my_dict)
+
+for k, v in sorted(my_dict.items(), key=lambda x: x[1]):
+  print(str(k))
+
+#for k, v in sorted(dct.items(), key=lambda x: x[1]):
+#    print(str(k) + ": " + str(v))
+
+===================
+
+my_dict = {}
+N = int(input())
+for i in range(N):
+  key, value = input().split()
+  value = int(value)
+  flg = key in my_dict
+  if flg == True:
+    num = my_dict[key]
+    value = num + value
+  my_dict[key] = value
+
+for k, v in sorted(my_dict.items(),reverse=True,key=lambda x: x[1]):
+  print(str(k) + " " + str(v))
+  
+===================
+  
+
+
+#! /usr/local/bin/python3
+
+num = int(input())
+inputs = {}
+result = {}
+
+for i in range(num):
+    tmp = input().split()
+
+    exist = False
+    for (key, value) in inputs.items():
+        if key == tmp[0]:
+            exist = True
+
+    if exist:
+        inputs[tmp[0]] = inputs[tmp[0]] + int(tmp[1])
+    else:
+        inputs[tmp[0]] = int(tmp[1])
+
+# ƒ\[ƒg—p‚Ékey‚Ævalue‚ð”½“]‚³‚¹‚½Ž«‘‚ðì‚é
+for (key, value) in inputs.items():
+    result[value] = key
+
+result = sorted(result.items(), reverse=True)
+
+for i in result:
+    print(i[1] + ' ' + str(i[0]))
+
+===================
+
+
+list = []
+flg = ''
+for i in range(65,65+26):
+ W = chr(i)
+ list.append(W)
+
+iX = input()
+iY = input()
+iC = input()
+
+Xn = list.index(iX)
+Yn = list.index(iY)
+Cn = list.index(iC)
+
+if Xn > Yn:
+  flg = 'false'
+else:
+  if Cn >= Xn and Cn <=Yn:
+    flg = 'true'
+  else:
+    flg = 'false'
+
+print (flg)
+
+===================
+
+
+user = {} #–¼‘O‚ÆŒŒ‰tŒ^‚ÌŽ«‘‚ð’è‹`
+fort = {} #ŒŒ‰tŒ^‚Æè‚¢Œ‹‰Ê‚ÌŽ«‘‚ð’è‹`
+
+#–¼‘O‚ÆŒŒ‰tŒ^‚ÌŽ«‘‚ðì¬
+N = int(input())
+for i in range(N):
+  key, value = input().split()
+  user[key] = value
+
+#ŒŒ‰tŒ^‚Æè‚¢Œ‹‰Ê‚ÌŽ«‘‚ðì¬
+M = int(input())
+for i in range(M):
+  key, value = input().split()
+  fort[key] = value
+
+#ŒŒ‰tŒ^‚ðƒL[‚ÉuserŽ«‘‚Ì–¼‘O‚ÆfortŽ«‘‚Ìè‚¢Œ‹‰Ê‚ð•R‚Ã‚¯‚Äo—Í
+for k,v in user.items():
+  blood = v
+  name  = k
+  print (name + ' ' + fort[blood])
+
+===================
