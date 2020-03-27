@@ -196,3 +196,63 @@ for k,v in user.items():
   print (name + ' ' + fort[blood])
 
 ===================
+
+
+i = list(map(int, input().split()))
+Total = i[0]
+pt = 0
+
+for i in range(i[1]):
+  num = int(input())
+  if pt >= num:
+   pt = pt - num
+  else:
+   Total = Total - num
+   pt = pt + num * 0.1
+  print (Total + ' ' + pt)
+
+===================
+
+MAX =''
+tmp = []
+
+num = list(map(int, input().split()))
+n = num[0]
+k = num[1]
+
+log = list(map(int, input().split()))
+
+for i in range(num[0]-num[1]+1):
+#  print ('i=',i)   
+  for j in range(k-1):
+#   print ('j=',j)
+   h = i + 1
+   total = log[i] + log[h]
+   tmp.append(total)
+#   print (tmp)
+#print (tmp)
+#print(max(tmp))
+max = max(tmp)
+print(str(tmp.count(max)) + ' ' + str(tmp.index(max)+1) )
+
+
+===================
+
+MAX =''
+tmp = []
+
+num = list(map(int, input().split()))
+n = num[0]
+k = num[1]
+
+log = list(map(int, input().split()))
+
+for i in range(num[0]-num[1]+1):
+  h = i
+  total = 0 
+  for j in range(k):
+    total = total + log[h]
+    h = h + 1
+  tmp.append(total)
+max = max(tmp)
+print(str(tmp.count(max)) + ' ' + str(tmp.index(max)+1) )
