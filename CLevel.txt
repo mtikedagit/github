@@ -1,0 +1,76 @@
+=============================================
+
+■再チャレンジ C075:ポイント払い
+
+# coding: utf-8
+
+i = list(map(int, input().split())) #チャージされている金額、バスの乗車回数を表す整数 N, Mを入力
+Total = i[0]						#カード残高
+pt = 0								#paica ポイント
+
+for i in range(i[1]):
+  num = int(input())				
+  if pt >= num:						#乗車料金とポイント残高を比較
+   pt = pt - num
+  else:
+   Total = Total - num
+   pt = pt + num * 0.1
+  outpt = round(pt) 
+  print (str(Total) + ' ' + str(outpt))
+  
+  
+=============================================
+
+■C019:完全数とほぼ完全数
+
+# coding: utf-8
+
+X = []
+N = int(input())
+total = []
+
+for i in range(N):
+#  Y = list(map(int, input().split()))  
+  flg = ''
+  Y =  int(input())
+  sum = 0
+  for j in range(Y-1):		#入力された整数を除く為 1マイナス
+    if Y % (j+1) == 0:		#余りが0になる約数かどうか判定
+      sum = sum  + (j+1)
+#      print (sum)
+  if Y == sum:
+    flg = 'perfect'
+    print (flg) 
+  elif Y - sum ==  1:
+    flg = 'nearly'
+    print (flg) 
+  else:
+    flg = 'neither'
+    print (flg) 
+    
+=============================================
+
+■C016:Leet文字列
+
+# coding: utf-8
+
+Leet = {"A" : 4, "E" : 3, "G" : 6, "I" : 1, "O" : 0, "S" : 5, "Z" : 2}
+tmp = []
+word = ''
+
+S = input()
+N = len(S)
+
+for i in range(N):
+  flg = S[i] in Leet 	#Leet辞書に文字があるか判定
+  if flg == True:
+    W = Leet[S[i]]		#KeyでヒットしたValueを抽出
+    tmp.append(W)		#tmp辞書にValueを追加
+  else:
+    tmp.append(S[i])
+
+for i in range(N):
+  word = word + str(tmp[i])
+print (word)
+
+=============================================
