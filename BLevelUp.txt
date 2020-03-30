@@ -1,0 +1,46 @@
+===========================================
+
+■日別訪問者数の最大平均区間 (paizaランク B 相当)
+
+MAX =''
+tmp = []
+
+num = list(map(int, input().split()))
+n = num[0]		#全n日分のアクセスログ
+k = num[1]		#連続するk日
+
+log = list(map(int, input().split()))
+
+for i in range(num[0]-num[1]+1):		#連続する日を計算できる日程を計算
+  h = i
+  total = 0 
+  for j in range(k):					#連続する日まで総和を計算
+    total = total + log[h]
+    h = h + 1
+  tmp.append(total)
+max = max(tmp)							#総和の最大値を計算
+print(str(tmp.count(max)) + ' ' + str(tmp.index(max)+1) )	#最大値の総数と開始日を出力
+
+===========================================
+
+■みんなでしりとり (paizaランク B 相当)
+
+#1 行目にしりとりをする人数を表す整数 N、
+#単語リストに乗っている単語の数を表す整数 K
+#しりとりで行われた発言の数を表す整数 M がこの順にスペース区切りで与えられます。
+
+tmp = list(map(int, input().split()))
+
+for i in range(tmp[1])
+  K = input()
+  listK.append(K)
+
+for i in range(tmp[2])
+  M = input()
+  listM.append(M)
+
+一致するかどうか確認
+前のキーワードの後ろかどうか確認
+一番後ろがZかどうか確認
+
+
