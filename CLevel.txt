@@ -74,3 +74,86 @@ for i in range(N):
 print (word)
 
 =============================================
+
+■C024:ミニ・コンピュータ
+
+#・SET i a : 変数 i に値 a を代入する (i = 1, 2)
+#・ADD a :「変数 1 の値 + a」を計算し、計算結果を変数 2 に代入する
+#・SUB a :「変数 1 の値 - a」を計算し、計算結果を変数 2 に代入する
+
+dict = {"1" : '0', "2" : '0'}
+N = int(input())
+
+for i in range(N):
+    S = input().split() 
+    value = 0
+    if S[0] == 'SET':
+      value =  S[2]
+      dict[S[1]] = value    
+#      print (dict)
+    elif S[0] == 'ADD':
+      value =  int(dict['1'])
+      value =  value + int(S[1])
+      dict['2'] = str(value)
+#      print (dict)
+    elif S[0] == 'SUB':
+      value =  int(dict['1'])
+      value =  value - int(S[1])
+      dict['2'] = str(value)
+#      print (dict)
+
+print (dict['1'] + ' ' + dict['2'])
+
+=============================================
+
+■C056:テストの採点
+
+#学生の成績はテストの点数から 欠席回数 × 5 点 を引いた点数
+#成績がマイナスとなった場合は 0 とします。
+#成績が合格点以上になっている学生の学籍番号を順に出力するプログラムを作成
+#学籍番号は 1 から順に与えられます。
+
+dict = {}
+tmp = []
+
+N = list(map(int, input().split()))
+#print (N[0],N[1])
+for i in range(N[0]):
+  T = list(map(int, input().split()))
+  sum = T[0] - ( T[1]* 5 )
+  if sum < 0:
+    sum = 0
+  if sum >=  N[1]:
+    dict[i+1] = sum
+
+#print (dict)
+
+for k, v in sorted(dict.items(), ):
+  print(str(k))
+
+=============================================
+
+■C051:カード並べ
+
+#4 枚のカードを横に並べます。
+#左から 2 枚のカード、右から 2 枚のカードをそれぞれ 2 ケタの整数とみなし、
+#和を計算します。
+#あらゆる並べ方を試し、和の最大値（最大スコア）を求めます。
+#カード 4 枚に書かれた数が与えられるので、最大スコアを出力してください。
+#入力例 1 の 2, 9, 3, 8 の 4 枚を使う場合、以下の 12 通りの和の最大値 175 が最大スコアとなります。
+
+import itertools
+tmp = []
+S = input().split()
+#print (S)
+
+for v in itertools.permutations(S, 4):
+  T = v[0] + v[1]
+  U = v[2] + v[3]
+  sum = int(T) + int(U)
+  tmp.append(sum)
+print (max(tmp))
+
+
+=============================================
+
