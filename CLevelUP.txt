@@ -1,57 +1,4 @@
 
-
-===================
-
-
-===================
-
-
-
-===================
-
-
-
-
-===================
-
-
-i = list(map(int, input().split()))
-Total = i[0]
-pt = 0
-
-for i in range(i[1]):
-  num = int(input())
-  if pt >= num:
-   pt = pt - num
-  else:
-   Total = Total - num
-   pt = pt + num * 0.1
-  print (Total + ' ' + pt)
-
-===================
-
-MAX =''
-tmp = []
-
-num = list(map(int, input().split()))
-n = num[0]
-k = num[1]
-
-log = list(map(int, input().split()))
-
-for i in range(num[0]-num[1]+1):
-#  print ('i=',i)   
-  for j in range(k-1):
-#   print ('j=',j)
-   h = i + 1
-   total = log[i] + log[h]
-   tmp.append(total)
-#   print (tmp)
-#print (tmp)
-#print(max(tmp))
-max = max(tmp)
-print(str(tmp.count(max)) + ' ' + str(tmp.index(max)+1) )
-
 ===================
 
 ■Fizz Buzz (paizaランク C 相当)
@@ -237,6 +184,19 @@ print(s.count(c))
 
 ■文字列の重複カウント (paizaランク C 相当)
 
+s = input()
+t = input()
+M = len(s)
+N = len(t)
+count = 0
+#print (s,t,M,N)
+
+for i in range(N-(M-1)):
+  W=t[i:i+M]
+#  print (W,i,M)
+  if W == s:
+    count = count + 1
+print(count)
 
 
 ===================
@@ -370,3 +330,32 @@ for k,v in user.items():
   blood = v
   name  = k
   print (name + ' ' + fort[blood])
+  
+===================
+
+■スキルチェック入門編3:単語のカウント （Cランク）
+
+words = input().split()
+
+while words:
+  count_word = words[0]
+  print (count_word, words.count(count_word))
+
+  new_words = []
+  for word in words:
+    if word != count_word:
+      new_words.append(word)
+    
+  words = new_words
+
+  
+words = input().split()
+while words:
+   print (words[0], words.count(words[0]))
+   words = [ word for word in words if word != words[0]]
+   
+   
+ 
+===================
+
+■スキルチェック入門編4:検索履歴（Cランク）
