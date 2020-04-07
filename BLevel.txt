@@ -1,0 +1,62 @@
+■B021:複数形への変換
+
+
+
+・末尾が s, sh, ch, o, x のいずれかである英単語の末尾に es を付ける
+・末尾が f, fe のいずれかである英単語の末尾の f, fe を除き、末尾に ves を付ける
+・末尾の1文字が y で、末尾から2文字目が a, i, u, e, o のいずれでもない英単語の末尾の y を除き、末尾に ies を付ける
+・上のいずれの条件にも当てはまらない英単語の末尾には s を付ける
+
+
+N = int(input())
+
+for i in range(N):
+  SI = input()
+  L  = len(SI)
+  S1 = SI[-1:]
+  S2 = SI[-2:]
+  S3 = S2[:1]
+
+  if S1 == 's' or S1 == 'o' or S1 == 'x' or S2 == 'sh' or S2 == 'ch':
+    W = SI + 'es'
+  elif S1 == 'f': 
+    S4 = SI[:L-1]
+    W = S4 + 'ves'
+  elif S2 == 'fe':
+    S4 = SI[:L-2]
+    W = S4 + 'ves'   
+  elif  S3 != 'a' and S3 != 'i' and S3 != 'u' and S3 != 'e' and S3 != 'o':
+    if  S1 == 'y':  
+      S4 = SI[:L-1]
+      W = S4 + 'ies'
+  else:
+    W = SI + 's'  
+  print (W)
+  
+ =====================
+ 
+■B055:タクシー料金 
+ 
+ 
+ 初乗り距離 a_i、 初乗り運賃 b_i、 加算距離 c_i、 加算運賃 d_i 
+
+cost = 0
+costlist = []
+
+N = list(map(int, input().split()))  
+
+for i in range(N[0]):
+  M = list(map(int, input().split()))  
+  dis  = M[0]
+  cost = M[1]
+    
+  while dis <= N[1]: 
+    dis = dis + M[2]
+    cost = cost + M[3]
+  costlist.append(cost)
+
+print(str(min(costlist)) + ' ' + str((max(costlist))))
+
+ =====================
+ 
+ 

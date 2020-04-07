@@ -1,0 +1,72 @@
+＃06:2次元リストをforで作成する
+
+配列をforで作成
+
+numbers = [i * 2 for i in range(10)]
+print(numbers)
+
+2次元配列をforで作成する
+
+numbers2 = [[1 for i in range(3)] for j in range(4)]
+print(numbers2)
+
+＃07:ドット絵を表示する
+
+# coding: utf-8
+# Your code here!
+
+# ドット絵を表示する
+
+enemy_img = [[0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0],
+             [1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1],
+             [1,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1],
+             [1,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1],
+             [0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0],
+             [0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,0],
+             [0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1]]
+
+for line in enemy_img:
+    for dot in line:
+        if dot == 1:
+            print("#", end="")
+        else:
+            print(" ", end="")
+    print()
+
+
+＃09:enumerateで2次元リストを操作する
+
+# coding: utf-8
+# Your code here!
+
+# 2次元リストで地図を表示する
+
+landmap = [["森" for i in range(20)] for j in range(10)]
+landmap[0][0] = "城"
+landmap[0][19] = "町"
+landmap[9][19] = "町"
+for i,line in enumerate(landmap):
+    print(str(i) + ":", end="")
+    for area in line:
+        print(area, end="")
+    print()
+
+＃10:2次元リストのマップに道を追加する
+
+# coding: utf-8
+# Your code here!
+
+# 2次元リストで地図を表示する
+
+landmap = [["森" for i in range(20)] for j in range(10)]
+landmap[0][0] = "城"
+landmap[0][19] = "町"
+landmap[9][19] = "町"
+for i,line in enumerate(landmap):
+    print(str(i) + ":", end="")
+    for j,area in enumerate(line):
+        if (i % 2 == 0 or j % 3 == 0) and area == "森":
+            print("＋", end="")
+        else:
+            print(area, end="")
+    print()

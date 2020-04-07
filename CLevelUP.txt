@@ -358,4 +358,86 @@ while words:
  
 ===================
 
-■スキルチェック入門編4:検索履歴（Cランク）
+■文字列の出力 (paizaランク C 相当)
+
+for i in range(5):
+ S = input()
+ print(S)
+
+===================
+
+■五目並べ(1行) (paizaランク C 相当)
+
+i = 1
+S = input()
+
+while i < 5:
+  if S[0:1] == S[i:i+1]:
+    flg = 'Win'
+  else:
+    flg = 'None'
+    break
+  i = i +1
+
+if S[0:1] != '.' and flg == 'Win': 
+ print (S[0:1])
+else:
+ print ('D')
+ 
+===================
+
+■五目並べ(横) (paizaランク C 相当)
+ 
+j = 0
+while j < 5:
+
+  i = 1
+  S = input()
+
+  while i < 5:
+    if S[0:1] != '.' and S[0:1] == S[i:i+1]:
+      flg = 'Win'
+      P = S[0:1]
+    else:
+      flg = 'None'
+      break
+    i = i +1
+  
+  j = j +1
+  if flg ==  'Win':
+    break
+
+if flg == 'Win': 
+ print (P)
+else:
+ print ('D')
+
+================
+
+#! /usr/local/bin/python3
+
+result = 'D'
+
+for i in range(5):
+    board = input()
+
+    pivot = board[0]
+    count = 0
+    for stone in board:
+        if stone != '.' and stone == pivot:
+            count += 1
+        else:
+            break
+
+    if count == 5:
+        result = pivot
+
+
+print(result)
+
+
+===================
+
+■五目並べ（縦） (paizaランク C 相当)
+
+

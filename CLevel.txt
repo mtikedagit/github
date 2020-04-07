@@ -157,3 +157,87 @@ print (max(tmp))
 
 =============================================
 
+C067:【ハッカー入門コラボ問題】数字の調査
+
+
+N = list(map(int, input().split()))
+
+bin_str = bin(N[1])
+l = len(bin_str)
+print (bin_str, l)
+
+for i in range(N[0]):
+  Y =  int(input())
+  print  ( bin_str[ l-Y : l-Y+1 ] )
+
+
+=============================================
+
+■C055:ログのフィルター
+flg =''
+count = 0
+N =  int(input())
+G =  input()
+
+
+for i in range(N):
+  flg =''
+  W =  input()
+  flg =  G in W
+  if flg == True:
+   print (W)
+   count = count +1
+if count == 0:
+ print ('None')
+ 
+ 
+=============================================
+
+■C077:【30万人記念問題】レポートの評価
+ 
+ 
+ N = list(map(int, input().split()))
+
+for i in range(N[0]):
+ M = list(map(int, input().split()))
+ S = (100 / N[1] ) * M[1] 
+ if M[0] > 0 and M[0] <= 9:
+  S = S * 0.8
+ elif M[0] >= 10:
+  S = 0
+ 
+# print(S)
+ 
+ if S >= 80:
+  print ('A')
+ elif S <=79 and S >= 70:
+  print ('B')     
+ elif S <=69 and S >= 60:
+  print ('C')  
+ elif S <=59:
+  print ('D')    
+
+=============================================
+
+C070:簡易カードゲーム
+
+cnt = []
+n =  int(input())
+for i in range(n):
+  card =  input()
+  for j in range(4):
+#    print (card[j:j+1])
+    cnt.append(card.count(card[j:j+1]))
+#  print (cnt)
+  flg = 'No Pair'
+  for k in cnt:
+    if k == 4:
+      flg = 'Four Card'
+    elif k == 3:
+      flg = 'Three Card'
+    elif k == 2 and cnt.count(2) == 4:
+      flg = 'Two Pair'
+    elif k == 2:
+      flg = 'One Pair'
+  print (flg)
+  cnt = []

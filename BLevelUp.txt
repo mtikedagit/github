@@ -23,6 +23,44 @@ print(str(tmp.count(max)) + ' ' + str(tmp.index(max)+1) )	#Å‘å’l‚Ì‘”‚ÆŠJn“ú‚
 
 ===========================================
 
+# n ‚Æ k ‚ğæ“¾
+input_str = input().split()  # ƒXƒy[ƒX‹æØ‚è‚Åæ“¾
+n, k = map(int, input_str)
+
+# a_1, a_2 ... a_n ‚ğæ“¾
+input_list = input().split()
+a_list = list(map(int, input_list))
+
+# ƒLƒƒƒ“ƒy[ƒ“‚ÌŠe‹æŠÔ‚Ì•½‹Ï’l
+average = []
+# for i in range(n - k + 1):
+#     i_average = 0
+#     for j in range(k):  # k“úŠÔ•ª‘«‚µ‚Ä•½‹Ï‚ğ‹‚ß‚é
+#         i_average += a_list[i]
+#
+#    average.append(i_average / k)
+
+tmp = 0
+for i in range(k):  # Å‰‚Ì‹æŠÔ‚ğ‘«‚·
+    tmp += a_list[i]
+
+average.append(tmp)
+for i in range((n - k + 1) - 1):  # ŸˆÈ~‚Ì‹æŠÔ‚ğŒvZ‚µ‚Ä‚¢‚­
+    tmp = average[i] + a_list[k + i] - a_list[i]
+    average.append(tmp)
+
+ans_max = max(average)
+
+ans_first_max = average.index(ans_max)
+
+ans_count = average.count(ans_max)
+
+print(str(ans_count) + " " + str(ans_first_max + 1))
+
+===========================================
+
+
+
 ¡‚İ‚ñ‚È‚Å‚µ‚è‚Æ‚è (paizaƒ‰ƒ“ƒN B ‘Š“–)
 
 #1 s–Ú‚É‚µ‚è‚Æ‚è‚ğ‚·‚él”‚ğ•\‚·®” NA
