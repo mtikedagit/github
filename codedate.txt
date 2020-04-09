@@ -186,3 +186,19 @@ while i <= End:
   i = i + timedelta(days=1)
 
 ======================
+
+s = input()
+
+flg = 'No'
+if s[0:4].isdecimal() == True:
+  
+  if s[4:5] == '/':
+      
+    if s[5:7].isdecimal() == True:
+        
+      if s[7:8] == '/':
+
+        if s[8:10].isdecimal() == True:
+          flg = 'Yes'
+
+print (flg)

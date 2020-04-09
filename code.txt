@@ -5,7 +5,7 @@ for i in range(3):
 ===================
 
 num = int(input())
-if num % 2 == 0:
+if num % 2 == 0:5
      print('even')
 else:
      print('odd')
@@ -77,18 +77,7 @@ for i in range(N):
  
 ============
 
-N = int(input())
-for i in range(N):
- num = i + 1
- if num % 3 == 0 and  num % 5 == 0:
-  print ("Fizz Buzz")
- elif num % 3 == 0:
-  print ("Fizz")
- elif num % 5 == 0:
-  print ("Buzz")
- else: 
-  print (num)
-  
+
   
 ===============
 
@@ -297,28 +286,63 @@ print (word)
 
 ============================
 
-from collections import Counter
-s = input().split()
-count = Counter(s)
 
-for mykey, myvalue in count.items():
- print(mykey,myvalue)
  
 ============================
 
-list=[]
-N = int(input())
-for i in range(N):
- flg = 0    
- W = input()
- c = len(list)
- if c >= 1:
-  for j in range(c):
-    if list[j] == W:
-     flg = 1
- if flg == 1:
-  list.remove(W) 
- list.insert(0, W)
-c = len(list)
-for i in range(c):
- print (list[i])
+ 
+
+============================
+
+
+================
+
+
+
+================
+
+num = int(input())
+if num >= 10000:
+  print (num)
+else:
+  num = num + 10000
+  print (num)
+
+================
+
+num = int(input())
+num = 7 - num
+print (num)
+
+===============
+
+s = input().split()
+
+print (s[0][0] +"."+ s[1][0])
+
+
+===============
+
+s = input().split()
+
+if s[1] == 'M':
+ print ('Hi, Mr.' + ' '+ s[0] )
+ 
+if s[1] == 'F':
+ print ('Hi, Ms.' + ' '+ s[0] )
+ 
+===============
+
+
+s1 = input()
+s2 = input()
+
+num1 = len(s1)
+num2 = len(s2)
+
+flg = 'NG'
+
+if  s1[num1-1:] == s2[:1]:
+  if s2[num2-1:] != 'n':
+    flg = 'OK'
+print (flg)

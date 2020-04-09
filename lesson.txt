@@ -70,3 +70,23 @@ for i,line in enumerate(landmap):
         else:
             print(area, end="")
     print()
+
+
+=============================
+
+
+L = []
+M = []
+N = list(map(int, input().split()))
+
+#print (N[0],N[1])
+
+for i in range(N[0]):
+  A = input()
+  for j in range(N[1]):
+    M.append(A[j:j+1])
+    print(M)
+  L.append(M)
+  M= []
+print (L)
+
