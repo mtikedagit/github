@@ -1,0 +1,1 @@
+https://event.on24.com/eventRegistration/EventLobbyServlet?target=reg20.jsp&mode=login&loginemail=mtikeda%40nissho-ele.co.jp&eventid=2209457&sessionid=1&key=6015F3E4A97E207A7DEF9204608D096A&regTag=&sourcepage=register
