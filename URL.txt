@@ -1,1 +1,1 @@
-https://event.on24.com/eventRegistration/EventLobbyServlet?target=reg20.jsp&mode=login&loginemail=mtikeda%40nissho-ele.co.jp&eventid=2209410&sessionid=1&key=0CDF3940850418B4ED470684FDA83E9E&regTag=&sourcepage=register
+https://event.on24.com/eventRegistration/EventLobbyServlet?target=reg20.jsp&mode=login&loginemail=mtikeda%40nissho-ele.co.jp&eventid=2217064&sessionid=1&key=D3D5A7568CB2DCEBC0A9BAF06CF1E342&regTag=&sourcepage=register
