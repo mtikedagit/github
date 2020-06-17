@@ -1,2 +1,9 @@
 https://onlinexperiences.com/Launch/Event.htm?ShowKey=94844
 https://try.newrelic.com/rs/412-MZS-894/images/Kubernetes_Monitoring_20200616.pdf
+
+https://sbb.smktg.jp/cc/0nNshWO0xrUtrT6KX
+#パスワード：122627
+
+#▼ハンズオンテスト接続用 ▼　※接続可能時間：10:30～12:00
+https://sbb.smktg.jp/cc/0nNshWP0xrUtrT6KY
+#パスワード：594968
