@@ -1,1 +1,3 @@
 http://ddb5.rhdemo.io/
+
+https://github.com/ansible/workshops/blob/master/exercises/ansible_windows/3-playbook/README.ja.md
