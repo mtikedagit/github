@@ -16,3 +16,9 @@ https://VMware.zoom.us/j/96191618735?pwd=RGk5bE1EZW8wdk1Od0huZ1c1VkdoUT09
 
 https://sbb.smktg.jp/cc/0nNsi1g0xrUtrT6Pp
 パスワード：078693
+
+　■Horizon Cloud
+　https://tco.vmware.com/horizon/
+　
+　■WVD
+　https://cloudsteady.jp/solution/wvd_cost/index.html
