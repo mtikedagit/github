@@ -1,0 +1,64 @@
+10.9.163.158
+10.9.163.253
+10.9.9.33
+ikeda
+
+http://ozashu.hatenablog.com/entry/2018/05/07/100321
+
+◆Minikube で快適に Ingress を利用する
+https://qiita.com/superbrothers/items/13d8ce012ef23e22cb74
+
+
+◆Minikubeを使ってローカルにkubernetes環境を構築
+https://qiita.com/Esfahan/items/f5c846088281c39f73a4
+
+◆MinikubeでLocalにKubernetes環境を作るメモ
+https://qiita.com/takat0-h0rikosh1/items/76ed2f70194d4ab3075d
+
+◆minikube でローカルでのテスト用 Kubernetes を構築
+https://blog.1q77.com/2016/10/setup-kubernetes-1-4-using-minikube/
+
+◆ローカルでkubernetesを動かせるminikubeを試す
+https://reiki4040.hatenablog.com/entry/2017/04/11/221122
+
+◆minikube と nginx でKubernetesを試してみる
+https://qiita.com/masa0209/items/730e5eb766c4e79dacb6
+
+◎Kubernetesハンズオン
+https://www.nic.ad.jp/ja/materials/iw/2018/proceedings/h2/h2-takara-4.pdf
+
+◎KubernetesでのService公開方法に関する検証 - Ingress Controllerの活用
+https://developers.freee.co.jp/entry/kubernetes-ingress-controller
+
+◎Kubernetes "サービス"の概要についての自習ノート
+https://qiita.com/MahoTakara/items/d18d8f9b36416353066c
+
+
+◎minikubeのvm-driver noneでk8sを構築したときに外部ホストからアクセスを許可する
+https://thaim.hatenablog.jp/entry/2017/12/09/122520
+
+
+◎Minikubeを使ってローカルにkubernetes環境を構築
+https://qiita.com/Esfahan/items/f5c846088281c39f73a4
+
+
+
+◎Serviceを利用したクラスター内のアプリケーションへのアクセス
+https://kubernetes.io/ja/docs/tasks/access-application-cluster/service-access-application-cluster/
+
+◎Hello Minikube
+https://kubernetes.io/ja/docs/tutorials/hello-minikube/
+
+https://www.scsk.jp/lib/product/oss/pdf/oss_27.pdf
+
+
+◎WordPress環境を作る Kubernetes編
+https://qiita.com/cyberblack28/items/0d7abff8efb33ecc1ca2
+
+◆AnsibleのVmware系モジュールを使ったのでまとめ
+https://qiita.com/chataro0/items/4276985a67b531fb32b0
+
+
+◎AnsibleでVMwareに接続するための初期設定(vCenter/6.7)@CentOS7
+https://www.namakedame.work/ansible-vm-plugin/
+
