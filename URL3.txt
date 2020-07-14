@@ -1,8 +1,32 @@
 
+#7月21日(火)　15:00 
+#『【緊急開催】アナリストが1,267社の調査結果を分析！アフターコロナに求められる提案』
+https://event.on24.com/wcc/r/2426420/55E7DA6FA107754FD01B678104F1364D?mode=login&email=mtikeda@nissho-ele.co.jp
+
+
+#7月22日(水)
+
+#『ここ、どうしたらいいんだろう…モヤモヤを取り除く！Azure Stack HCI提案の勘所』
+#【日時】　July 22, 2020　(Wednesday)　11:00 AM～
 https://event.on24.com/wcc/r/2426431/9A15C33532077ED674EAB67445D7C38C?mode=login&email=mtikeda@nissho-ele.co.jp
 
+#セミナータイトル：[新卒SE向け] 初めての仮想化入門コース( vSphere 7 / vSAN 7 最新情報付)
+#日程：2020年7月8日（水）14:00～15:00（受付開始13:50）
+#名前欄：下記の参加ID 2220155
+https://VMware.zoom.us/j/98944341417?pwd=ZzFPaTZxbXlENzVvVjZ6dDF4Vk5uQT09
+
+#「成功企業に学ぶ2020年代の企業ITのニューノーマル」 
+#日時：2020年7月22日 03:00 PM 大阪、札幌、東京
+#ウェビナーID：970 4925 2786
+
+7月28日　11:30
+: ファイルサーバー導入・活用のお悩み「これで解決」！！
 https://event.on24.com/wcc/r/2314268/235705F8CC85F1BA10701C8B75EC94F1?mode=login&email=mtikeda@nissho-ele.co.jp
 
-#2020年7月29日 03:00 PM ウェビナーID：913 0579 4985
+7月29日
+『世界一インテリジェントなHPE Primera徹底解説 ～製品概要から最新アップデート検証まで一挙公開～』
+https://event.on24.com/wcc/r/2132757/A7A20C12DDEBEE347FFA107322D231A0?mode=login&email=mtikeda@nissho-ele.co.jp
 
-#日時：2020年7月22日 03:00 PM ウェビナーID：970 4925 2786
+
+#「テレワークの長期化で考える NewNormalに向けたアプローチ」
+#2020年7月29日 03:00 PM ウェビナーID：913 0579 4985
