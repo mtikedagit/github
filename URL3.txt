@@ -19,24 +19,31 @@ https://VMware.zoom.us/j/98944341417?pwd=ZzFPaTZxbXlENzVvVjZ6dDF4Vk5uQT09
 #日時：2020年7月22日 03:00 PM 大阪、札幌、東京
 #ウェビナーID：970 4925 2786
 
-7月28日　11:30
-: ファイルサーバー導入・活用のお悩み「これで解決」！！
-https://event.on24.com/wcc/r/2314268/235705F8CC85F1BA10701C8B75EC94F1?mode=login&email=mtikeda@nissho-ele.co.jp
 
-7月29日
-『世界一インテリジェントなHPE Primera徹底解説 ～製品概要から最新アップデート検証まで一挙公開～』
-https://event.on24.com/wcc/r/2132757/A7A20C12DDEBEE347FFA107322D231A0?mode=login&email=mtikeda@nissho-ele.co.jp
+#7月28日　11:30
+#: ファイルサーバー導入・活用のお悩み「これで解決」！！
+#https://event.on24.com/wcc/r/2314268/235705F8CC85F1BA10701C8B75EC94F1?mode=login&email=mtikeda@nissho-ele.co.jp
+
+#7月29日
+#『世界一インテリジェントなHPE Primera徹底解説 ～製品概要から最新アップデート検証まで一挙公開～』
+#https://event.on24.com/wcc/r/2132757/A7A20C12DDEBEE347FFA107322D231A0?mode=login&email=mtikeda@nissho-ele.co.jp
+
+
+#【7月29日（水）】 逆境を乗り越える！ニューノーマル時代のソリューションCohesity：データ保護から始めるDR/BCP対策確認
+# 03:00 PM
+#ウェビナーID：820 0821 4391
 
 
 #「テレワークの長期化で考える NewNormalに向けたアプローチ」
 #2020年7月29日 03:00 PM ウェビナーID：913 0579 4985
 
+#2020年 7月 29日(水) 15：00～16：00
+#Cohesity：データ保護から始めるDR/BCP対策
+#ウェビナーID 820 0821 4391
 
-
-
-『Withコロナ時代の働き方と投資～VDI基盤をas-a-serviceで利用する』
-開催日程：2020年07月30日　木曜日　11:00～
-https://event.on24.com/wcc/r/2452231/E1F88AD20F9B888667042B8E3AB1DC9A?mode=login&email=mtikeda@nissho-ele.co.jp
+#『Withコロナ時代の働き方と投資～VDI基盤をas-a-serviceで利用する』
+#開催日程：2020年07月30日　木曜日　11:00～
+#https://event.on24.com/wcc/r/2452231/E1F88AD20F9B888667042B8E3AB1DC9A?mode=login&email=mtikeda@nissho-ele.co.jp
 
 
 #コンテナ運用の課題
