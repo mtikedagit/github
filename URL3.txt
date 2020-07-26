@@ -28,6 +28,14 @@ https://VMware.zoom.us/j/98944341417?pwd=ZzFPaTZxbXlENzVvVjZ6dDF4Vk5uQT09
 #ウェビナーID：970 4925 2786
 
 
+#VMware KubeNative Day
+#Kubernetes で変わるビジネスと VMware の Kubernetes への取り組み
+#日程：2020年07月28日（火） 14:00～16:30
+#会場：オンライン会場
+https://VMware.zoom.us/j/98271459771?pwd=RzBLRWx5MlBXeDBnSWtnYjl2MFlLdz09
+
+
+
 #7月28日　11:30
 #: ファイルサーバー導入・活用のお悩み「これで解決」！！
 #https://event.on24.com/wcc/r/2314268/235705F8CC85F1BA10701C8B75EC94F1?mode=login&email=mtikeda@nissho-ele.co.jp
